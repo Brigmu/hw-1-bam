@@ -1,0 +1,101 @@
+body {
+    box-sizing:border-box;
+    color: #777777;
+    
+}
+
+header {
+    background: #ffffff;
+    border-color: #cccccc;
+    border: 5px;
+
+}
+
+.container {
+    background: #4aaaa5;
+    padding-left: 400px;
+    padding-top: 100px;
+    height: 200px;
+    width: 400px;
+    float: left;
+}
+
+nav  {
+    float:right;
+}
+
+header:after {
+    content: "";
+    clear: both;
+}
+
+nav ul {
+    margin 0;
+    padding 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 50px;
+    padding-top: 100px;
+}
+
+nav a {
+    color: #777777;
+    text-decoration: none;
+}
+
+.wrapper {
+    width: 960px;
+    margin: 500px 100px 500px 100px;
+    border: 10px;
+    border-color: #dddddd;
+    background: #ffffff;
+    padding-bottom: 50px;
+}
+
+.content {
+    margin: 25px;
+}
+
+#myFace {
+    height: 200px;
+    width: 200px;
+    float: left;
+}
+
+.content p {
+    float: right;
+}
+
+.content after {
+    content: "";
+    clear: both;
+}
+
+.footer {
+    background: #666666;
+    height: 50px;
+    margin-top: -50px;
+}
+
+.photoBox {
+    display: inline-block;
+    margin: 25px;
+}
+
+.photoBox img {
+    height: 300px;
+    width: 150px;
+}
+
+.photoBanner {
+    position: relative;
+    margin-bottom: -30px;
+    background: #4aaaa5;
+}
+
+#submit {
+    background: #4aaaa5;
+}
