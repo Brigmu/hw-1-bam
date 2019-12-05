@@ -1,23 +1,39 @@
+
+
 body {
     box-sizing:border-box;
-    color: #777777;
-    
+    color: #777777; 
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 50px;
 }
 
 header {
     background: #ffffff;
-    border-color: #cccccc;
-    border: 5px;
-
+    border: 2px solid #cccccc;
 }
 
 .container {
     background: #4aaaa5;
-    padding-left: 400px;
-    padding-top: 100px;
-    height: 200px;
-    width: 400px;
+    margin-left: 400px;
+    padding-left: 40px;
+    padding-bottom: 60px;
+    height: 50px;
+    width: 150px;
     float: left;
+}
+
+h1,h3 {
+    color: white;
+}
+
+h2 {
+    color: #4aaaa5;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 nav  {
@@ -26,19 +42,19 @@ nav  {
 
 header:after {
     content: "";
+    display: table;
     clear: both;
 }
 
 nav ul {
-    margin 0;
-    padding 0;
+    margin-right: 550px;
+    padding-top: 30px;
     list-style: none;
 }
 
 nav li {
     display: inline-block;
-    margin: 50px;
-    padding-top: 100px;
+    margin-left: 50px;
 }
 
 nav a {
@@ -48,11 +64,10 @@ nav a {
 
 .wrapper {
     width: 960px;
-    margin: 500px 100px 500px 100px;
-    border: 10px;
-    border-color: #dddddd;
+    margin: 50px 400px 50px 400px;
+    border: 2px solid #cccccc;
     background: #ffffff;
-    padding-bottom: 50px;
+    min-height: 100%;
 }
 
 .content {
@@ -61,24 +76,25 @@ nav a {
 
 #myFace {
     height: 200px;
-    width: 200px;
+    width: 250px;
     float: left;
+    margin: 0 20px 20px 0;
 }
 
-.content p {
-    float: right;
-}
-
-.content after {
+.content:after {
     content: "";
     clear: both;
+    display: table;
 }
 
 .footer {
     background: #666666;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
     height: 50px;
-    margin-top: -50px;
 }
+
 
 .photoBox {
     display: inline-block;
@@ -86,16 +102,26 @@ nav a {
 }
 
 .photoBox img {
-    height: 300px;
-    width: 150px;
+    height: 200px;
+    width: 250px;
 }
 
 .photoBanner {
     position: relative;
-    margin-bottom: -30px;
+    padding: 1px;
+    bottom: 75px;
+    z-index: 3;
     background: #4aaaa5;
+    text-align: center;
+}
+
+input, textarea {
+    width: 100%;
 }
 
 #submit {
     background: #4aaaa5;
+    color: white;
+    padding: 3px;
+    width: 100px;
 }
