@@ -1,5 +1,5 @@
 
-
+/*keeps boxstyling for whole page, sets to relative to allow of to be place abosulte in relation to it. min height 100vh so body is the full page area */
 body {
     box-sizing:border-box;
     color: #777777; 
@@ -13,6 +13,7 @@ header {
     border: 2px solid #cccccc;
 }
 
+/*floating containing and styling so its on the left and allows nav bar to be on right */
 .container {
     background: #4aaaa5;
     margin-left: 400px;
@@ -40,28 +41,34 @@ nav  {
     float:right;
 }
 
-header:after {
-    content: "";
-    display: table;
-    clear: both;
-}
 
+/*removes dots from list items and moves the nav over from right */
 nav ul {
     margin-right: 550px;
     padding-top: 30px;
     list-style: none;
 }
 
+/*sets the list items to be inline-block to allow them to all be in 1 block line */
 nav li {
     display: inline-block;
     margin-left: 50px;
 }
 
+/*remove the underlines on the nav links */
 nav a {
     color: #777777;
     text-decoration: none;
 }
 
+/*clearing floats after the header (both styled container and nav bar) and sets display back to nomral after nav had set to inline */
+header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* styling of the main section of site */
 .wrapper {
     width: 960px;
     margin: 50px 400px 50px 400px;
@@ -74,6 +81,7 @@ nav a {
     margin: 25px;
 }
 
+/*floating image to allow text to wrap and give a margin so text isnt right up next to the image */
 #myFace {
     height: 200px;
     width: 250px;
@@ -81,12 +89,14 @@ nav a {
     margin: 0 20px 20px 0;
 }
 
+/* clearing the float and sets to table (photoBoxes set to inline) */
 .content:after {
     content: "";
     clear: both;
     display: table;
 }
 
+/*set to 100% width of page, absolute positioning based on body, set to stick to bottom */
 .footer {
     background: #666666;
     position: absolute;
@@ -95,7 +105,7 @@ nav a {
     height: 50px;
 }
 
-
+/*set to inline-block to allow multiple instances of photoBox to be on the same line */
 .photoBox {
     display: inline-block;
     margin: 25px;
@@ -106,6 +116,7 @@ nav a {
     width: 250px;
 }
 
+/*changing the position of the banners relative to their photos and allow them to be over the photo */
 .photoBanner {
     position: relative;
     padding: 1px;
@@ -115,6 +126,7 @@ nav a {
     text-align: center;
 }
 
+/*making it so the input and textarea in the form will span across the whole section they are in */
 input, textarea {
     width: 100%;
 }
